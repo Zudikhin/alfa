@@ -1,0 +1,1212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Oswald&family=Roboto&display=swap");
+@font-face {
+  font-family: "Road Radio";
+  src: local("Road Radio Bold"), local("Road-Radio-Bold"), url("../fonts/RoadRadio-Bold.woff2") format("woff2"), url("../fonts/RoadRadio-Bold.woff") format("woff"), url("../fonts/RoadRadio-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+  position: relative;
+}
+body.scroll {
+  overflow-y: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  border: none;
+  -moz-appearance: textfield;
+}
+
+input[type=number]:focus {
+  outline: none;
+}
+
+input[type=tel] {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type=text] {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type=tel]:focus {
+  outline: none;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+}
+
+select {
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px;
+}
+
+select,
+textarea,
+input[type=text],
+input[type=button],
+input[type=submit] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+div {
+  -webkit-tap-highlight-color: transparent;
+}
+
+div:focus {
+  outline: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px 15px;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    padding: 0px 45px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    padding: 0px;
+  }
+}
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #191924;
+}
+
+.dark_theme {
+  --primary-color: #191924;
+  --secondary-color: #FFFFFF;
+}
+
+.light {
+  display: block;
+}
+
+.dark {
+  display: none;
+}
+
+.header_block_right_checkbox_dot {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+body {
+  background: #fff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+body.dark_theme {
+  background: #191924;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+body.dark_theme .light {
+  display: none;
+}
+body.dark_theme .dark {
+  display: block;
+}
+body.dark_theme .header_block_right_checkbox_dot {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+body.dark_theme .projects_wrap_slider .slick-dots li {
+  background: rgba(217, 217, 217, 0.24);
+}
+body.dark_theme .projects_wrap_slider .slick-dots li.slick-active {
+  background: #9694E7;
+}
+body.dark_theme .news_block_slider_block .slick-dots li {
+  background: rgba(217, 217, 217, 0.24);
+}
+body.dark_theme .news_block_slider_block .slick-dots li.slick-active {
+  background: #9694E7;
+}
+body.dark_theme .news_block_slider_block_item {
+  background: #262433;
+}
+body.dark_theme .footer_block {
+  background: #262433;
+}
+body.dark_theme .footer_block_text_item span {
+  color: #A2A2A2;
+}
+body.dark_theme .footer_block_text_politic p {
+  color: rgba(255, 255, 255, 0.55);
+}
+body.dark_theme .footer_block_text_politic a {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 0px;
+}
+.header_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header_block ul {
+  display: none;
+}
+.header_block_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.header_block_right_checkbox {
+  width: 46px;
+  height: 20px;
+  background: #BCBCBC;
+  -webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+.header_block_right_checkbox_dot {
+  width: 16px;
+  height: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.header_block_right_drop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.header_block_right_drop_btn {
+  width: 26px;
+  height: 16px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 330ms ease-out;
+  transition: -webkit-transform 330ms ease-out;
+  transition: transform 330ms ease-out;
+  transition: transform 330ms ease-out, -webkit-transform 330ms ease-out;
+  margin-left: 7px;
+}
+.header_block_right_drop_btn .line-menu {
+  background: var(--secondary-color);
+  height: 2px;
+  width: 100%;
+}
+.header_block_right_drop_btn .line-menu.half {
+  width: 50%;
+}
+.header_block_right_drop_btn .line-menu.start {
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57), -webkit-transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  -webkit-transform-origin: right;
+  transform-origin: right;
+}
+.header_block_right_drop_btn .line-menu.end {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-transition: -webkit-transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transition: -webkit-transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57), -webkit-transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+}
+.header_block_right_drop_btn.active {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.header_block_right_drop_btn.active .line-menu.start {
+  -webkit-transform: rotate(-90deg) translateX(3px);
+          transform: rotate(-90deg) translateX(3px);
+}
+.header_block_right_drop_btn.active .line-menu.end {
+  -webkit-transform: rotate(-90deg) translateX(-3px);
+  transform: rotate(-90deg) translateX(-3px);
+}
+@media (min-width: 768px) {
+  .header_block_right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header_block_right_drop {
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 9px 0px 20px 0px;
+  }
+  .header_block ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header_block ul li {
+    margin-left: 30px;
+  }
+  .header_block ul li a {
+    font-family: "Road Radio";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--secondary-color);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .header_block_right_drop {
+    display: none;
+  }
+}
+
+.main {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 10px;
+}
+.main_block {
+  position: relative;
+}
+.main_block_prev {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 3;
+}
+.main_block_prev img {
+  width: 8px;
+}
+.main_block_next {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 3;
+}
+.main_block_next img {
+  width: 8px;
+}
+.main_block_slider_item img {
+  width: 100%;
+}
+.main_block_slider_item_text {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 15px;
+  height: 40px;
+}
+.main_block_slider_item_text p {
+  font-family: "RoadRadio";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.main_block_slider_item:first-child .main_block_slider_item_text {
+  left: 45%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.main_block_slider_item:first-child .main_block_slider_item_text h4 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.main_block_slider_item:first-child .main_block_slider_item_text h3 {
+  font-family: "Road Radio";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.main_block_slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.main_block_slider .slick-dots li {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  background: rgba(217, 217, 217, 0.24);
+  margin-left: 5px;
+}
+.main_block_slider .slick-dots li:first-child {
+  margin-left: 0px;
+}
+.main_block_slider .slick-dots li.slick-active {
+  background: #9694E7;
+}
+.main_block_slider .slick-dots li button {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  .main_block_prev {
+    left: 20px;
+  }
+  .main_block_prev img {
+    width: auto;
+  }
+  .main_block_next {
+    right: 20px;
+  }
+  .main_block_next img {
+    width: auto;
+  }
+  .main_block_slider .slick-dots li {
+    width: 7px;
+    height: 7px;
+    margin-left: 7px;
+  }
+  .main_block_slider_item_text {
+    bottom: 52px;
+  }
+  .main_block_slider_item_text p {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .main_block_slider_item:first-child .main_block_slider_item_text h4 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .main_block_slider_item:first-child .main_block_slider_item_text h3 {
+    font-size: 34px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 1200px) {
+  .main_block_slider_item:first-child .main_block_slider_item_text h4 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .main_block_slider_item:first-child .main_block_slider_item_text h3 {
+    font-size: 60px;
+    line-height: 61px;
+  }
+}
+
+.projects {
+  margin-top: 30px;
+}
+.projects_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projects_title h3 {
+  font-family: "Road Radio";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--secondary-color);
+}
+.projects_title a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects_title a img {
+  margin-left: 10px;
+}
+.projects_wrap {
+  position: relative;
+  margin-top: 20px;
+}
+.projects_wrap_prev {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 3;
+}
+.projects_wrap_prev img {
+  width: 8px;
+}
+.projects_wrap_prev img.desk {
+  display: none;
+}
+.projects_wrap_prev_wrap_desk {
+  display: none;
+}
+.projects_wrap_next {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 3;
+}
+.projects_wrap_next img {
+  width: 8px;
+}
+.projects_wrap_next img.desk {
+  display: none;
+}
+.projects_wrap_next_wrap_desk {
+  display: none;
+}
+.projects_wrap_slider_item {
+  position: relative;
+}
+.projects_wrap_slider_item img {
+  width: 100%;
+  border-radius: 16px;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects_wrap_slider_item p {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-family: "Road Radio";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.projects_wrap_slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.projects_wrap_slider .slick-dots li {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  background: rgba(25, 25, 36, 0.24);
+  margin-left: 5px;
+}
+.projects_wrap_slider .slick-dots li:first-child {
+  margin-left: 0px;
+}
+.projects_wrap_slider .slick-dots li.slick-active {
+  background: #9694E7;
+}
+.projects_wrap_slider .slick-dots li button {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  .projects_wrap_prev img {
+    width: auto;
+  }
+  .projects_wrap_next img {
+    width: auto;
+  }
+  .projects_wrap_slider_item img {
+    height: 300px;
+  }
+  .projects_wrap_slider_item p {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .projects_wrap_slider .slick-dots {
+    bottom: -30px;
+  }
+  .projects_wrap_slider .slick-dots li {
+    width: 7px;
+    height: 7px;
+    margin-left: 7px;
+  }
+}
+@media (min-width: 1200px) {
+  .projects {
+    margin-top: 80px;
+  }
+  .projects_title h3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .projects_title a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .projects_wrap_prev {
+    left: 0px;
+  }
+  .projects_wrap_prev img.mob {
+    display: none;
+  }
+  .projects_wrap_prev img.desk {
+    display: block;
+  }
+  .projects_wrap_prev_wrap_mob {
+    display: none;
+  }
+  .projects_wrap_prev_wrap_desk {
+    display: block;
+  }
+  .projects_wrap_next {
+    right: 0px;
+  }
+  .projects_wrap_next img.mob {
+    display: none;
+  }
+  .projects_wrap_next img.desk {
+    display: block;
+  }
+  .projects_wrap_next_wrap_mob {
+    display: none;
+  }
+  .projects_wrap_next_wrap_desk {
+    display: block;
+  }
+  .projects_wrap_slider {
+    width: 1064px;
+    margin: 0 auto;
+  }
+  .projects_wrap_slider_item img {
+    height: 360px;
+    border-radius: 16px;
+  }
+  .projects_wrap_slider_item p {
+    font-size: 40px;
+    line-height: 40px;
+    left: 30px;
+    bottom: 30px;
+  }
+}
+
+.news {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  margin-top: 50px;
+}
+.news_block_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.news_block_title a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+.news_block_title a p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+  margin-left: 10px;
+}
+.news_block h2 {
+  font-family: "Road Radio";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--secondary-color);
+}
+.news_block_slider {
+  position: relative;
+}
+.news_block_slider_prev {
+  display: none !important;
+}
+.news_block_slider_next {
+  display: none !important;
+}
+.news_block_slider_block {
+  margin-top: 20px;
+}
+.news_block_slider_block_item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+  background: #F5F5F5;
+  border-radius: 16px;
+}
+.news_block_slider_block_item img {
+  width: 100%;
+  height: 210px;
+  border-radius: 13px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news_block_slider_block_item p {
+  font-family: "Road Radio";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 15px;
+  color: var(--secondary-color);
+}
+.news_block_slider_block .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.news_block_slider_block .slick-dots li {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  background: rgba(25, 25, 36, 0.24);
+  margin-left: 5px;
+}
+.news_block_slider_block .slick-dots li:first-child {
+  margin-left: 0px;
+}
+.news_block_slider_block .slick-dots li.slick-active {
+  background: #9694E7;
+}
+.news_block_slider_block .slick-dots li button {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  .news_block_title {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0px;
+  }
+  .news_block_slider_block_item img {
+    height: 400px;
+  }
+  .news_block_slider_block .slick-dots {
+    bottom: -30px;
+  }
+  .news_block_slider_block .slick-dots li {
+    width: 7px;
+    height: 7px;
+    margin-left: 7px;
+  }
+}
+@media (min-width: 1200px) {
+  .news {
+    margin-top: 75px;
+  }
+  .news_block h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .news_block_slider {
+    width: 1064px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .news_block_slider_block {
+    margin-top: 0px;
+  }
+  .news_block_slider_prev {
+    display: block !important;
+    position: absolute;
+    left: -38px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .news_block_slider_next {
+    display: block !important;
+    position: absolute;
+    right: -38px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .news_block_slider_block .slick-slide {
+    margin: 0px 15px;
+  }
+  .news_block_slider_block_item img {
+    height: 210px;
+  }
+  .news_block_slider_block_item p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.single_news {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+.single_news_block_main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  width: 100%;
+}
+.single_news_block_text {
+  margin-top: 20px;
+}
+.single_news_block_text span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #818181;
+}
+.single_news_block_text h2 {
+  font-family: "Road Radio";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--secondary-color);
+}
+.single_news_block_text p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: justify;
+  color: var(--secondary-color);
+  margin-top: 20px;
+}
+@media (min-width: 1200px) {
+  .single_news_block_text {
+    margin-top: 50px;
+  }
+  .single_news_block_text h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .single_news_block_text p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 30px;
+  }
+}
+
+.footer {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 50px;
+  padding-bottom: 15px;
+}
+.footer_block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  background: #F5F5F5;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.footer_block_text {
+  position: relative;
+  z-index: 3;
+}
+.footer_block_text_item {
+  margin-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.footer_block_text_item span {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4B4B4B;
+}
+.footer_block_text_item a {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--secondary-color);
+  display: inline-block;
+  margin-top: 3px;
+}
+.footer_block_text_item p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--secondary-color);
+  margin-top: 3px;
+  max-width: 242px;
+}
+.footer_block_text_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+.footer_block_text_links a {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: var(--secondary-color);
+  display: inline-block;
+  margin-top: 8px;
+}
+.footer_block_text_politic {
+  margin-top: 84px;
+}
+.footer_block_text_politic p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(25, 25, 36, 0.55);
+  margin-bottom: 10px;
+}
+.footer_block_text_politic a {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(25, 25, 36, 0.55);
+}
+.footer_block_img_mob_polos {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.footer_block_img_mob_man {
+  position: absolute;
+  right: -80px;
+  bottom: -20px;
+  width: 263px;
+}
+.footer_block_img_desk {
+  display: none;
+}
+@media (min-width: 768px) {
+  .footer_block {
+    overflow: visible;
+    border-radius: 13px;
+  }
+  .footer_block_text_politic {
+    margin-top: 48px;
+  }
+  .footer_block_img_mob {
+    display: none;
+  }
+  .footer_block_img_desk {
+    display: block;
+  }
+  .footer_block_img_desk_polos {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+  .footer_block_img_desk_man {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    margin-top: 80px;
+    padding-bottom: 30px;
+  }
+  .footer_block {
+    padding: 30px;
+  }
+  .footer_block_text_item p {
+    width: auto;
+    max-width: 100%;
+  }
+  .footer_block_text_politic {
+    margin-top: 42px;
+  }
+}
