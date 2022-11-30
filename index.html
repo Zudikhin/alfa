@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="noscroll">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,12 +66,19 @@
       <div class="container">
         <div class="main_block">
           <div class="main_block_prev">
-            <img src="img/prev_white.svg" alt="">
+            <div class="main_block_prev_wrap_mob">
+              <img class="mob" src="img/prev_white.svg" alt="">
+              <img class="desk" src="img/prev_gray.svg" alt="">  
+            </div>
+            <div class="main_block_prev_wrap_desk">
+              <img class="dark" src="img/prev_white.svg" alt="">
+              <img class="light" src="img/prev_gray.svg" alt="">  
+            </div>
           </div>
           <div class="main_block_slider">
             <a href="#" class="main_block_slider_item">
               <img src="img/slider_1/1.png" alt="">
-              <div class="main_block_slider_item_text">
+              <div class="main_block_slider_item_text other">
                 <h4>Альфа-это сила!</h4>
                 <h3>Альфа-это люди!</h3>
               </div>
@@ -114,7 +121,14 @@
             </a>
           </div>
           <div class="main_block_next">
-            <img src="img/next_white.svg" alt="">
+            <div class="main_block_next_wrap_mob">
+              <img class="mob" src="img/next_white.svg" alt="">
+              <img class="desk" src="img/next_gray.svg" alt="">  
+            </div>
+            <div class="main_block_next_wrap_desk">
+              <img class="dark" src="img/next_white.svg" alt="">
+              <img class="light" src="img/next_gray.svg" alt="">  
+            </div>
           </div>
         </div>
       </div>
@@ -265,6 +279,36 @@
         </div>
       </div>
     </footer>
+
+    <div class="back_modal"></div>
+
+    <div class="dropdown_modal">
+      <div class="dropdown_modal_close">
+        <img class="light" src="img/close.svg" alt="">
+        <img class="dark" src="img/close_dark.svg" alt="">
+      </div>
+      <ul>
+        <li>
+          <a href="#">проекты</a>
+        </li>
+        <li>
+          <a href="#">ДЕЯТЕЛЬНОСТЬ</a>
+        </li>
+        <li>
+          <a href="#">Группа Альфа</a>
+        </li>
+        <li>
+          <a href="#">Наши партнеры</a>
+        </li>
+        <li>
+          <a href="#">О нас</a>
+        </li>
+      </ul>
+      <div class="dropdown_modal_links">
+        <a href="#">О союзе</a>
+        <a href="#">Руководящие органы </a>
+      </div>
+    </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>

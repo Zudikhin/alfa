@@ -261,6 +261,12 @@ body.dark_theme .footer_block_text_politic p {
 body.dark_theme .footer_block_text_politic a {
   color: rgba(255, 255, 255, 0.55);
 }
+body.dark_theme .dropdown_modal {
+  background: #191925;
+}
+body.dark_theme .back_modal {
+  background: rgba(25, 25, 36, 0.5);
+}
 
 .header {
   -webkit-box-sizing: border-box;
@@ -460,6 +466,9 @@ body.dark_theme .footer_block_text_politic a {
 .main_block_prev img {
   width: 8px;
 }
+.main_block_prev_wrap_desk {
+  display: none;
+}
 .main_block_next {
   position: absolute;
   right: 10px;
@@ -471,6 +480,12 @@ body.dark_theme .footer_block_text_politic a {
 }
 .main_block_next img {
   width: 8px;
+}
+.main_block_next_wrap_desk {
+  display: none;
+}
+.main_block_slider_item {
+  position: relative;
 }
 .main_block_slider_item img {
   width: 100%;
@@ -495,20 +510,20 @@ body.dark_theme .footer_block_text_politic a {
   text-align: center;
   color: #FFFFFF;
 }
-.main_block_slider_item:first-child .main_block_slider_item_text {
+.main_block_slider_item_text.other {
   left: 45%;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.main_block_slider_item:first-child .main_block_slider_item_text h4 {
+.main_block_slider_item_text.other h4 {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
 }
-.main_block_slider_item:first-child .main_block_slider_item_text h3 {
+.main_block_slider_item_text.other h3 {
   font-family: "Road Radio";
   font-style: normal;
   font-weight: 700;
@@ -578,23 +593,45 @@ body.dark_theme .footer_block_text_politic a {
     font-size: 28px;
     line-height: 120%;
   }
-  .main_block_slider_item:first-child .main_block_slider_item_text h4 {
+  .main_block_slider_item_text.other h4 {
     font-size: 22px;
     line-height: 26px;
   }
-  .main_block_slider_item:first-child .main_block_slider_item_text h3 {
+  .main_block_slider_item_text.other h3 {
     font-size: 34px;
     line-height: 41px;
   }
 }
 @media (min-width: 1200px) {
-  .main_block_slider_item:first-child .main_block_slider_item_text h4 {
+  .main_block_prev {
+    left: 0px;
+  }
+  .main_block_prev_wrap_mob {
+    display: none;
+  }
+  .main_block_prev_wrap_desk {
+    display: block;
+  }
+  .main_block_slider {
+    width: 1064px;
+    margin: 0 auto;
+  }
+  .main_block_slider_item_text.other h4 {
     font-size: 32px;
     line-height: 39px;
   }
-  .main_block_slider_item:first-child .main_block_slider_item_text h3 {
+  .main_block_slider_item_text.other h3 {
     font-size: 60px;
     line-height: 61px;
+  }
+  .main_block_next {
+    right: 0px;
+  }
+  .main_block_next_wrap_mob {
+    display: none;
+  }
+  .main_block_next_wrap_desk {
+    display: block;
   }
 }
 
@@ -653,9 +690,6 @@ body.dark_theme .footer_block_text_politic a {
 .projects_wrap_prev img {
   width: 8px;
 }
-.projects_wrap_prev img.desk {
-  display: none;
-}
 .projects_wrap_prev_wrap_desk {
   display: none;
 }
@@ -670,9 +704,6 @@ body.dark_theme .footer_block_text_politic a {
 }
 .projects_wrap_next img {
   width: 8px;
-}
-.projects_wrap_next img.desk {
-  display: none;
 }
 .projects_wrap_next_wrap_desk {
   display: none;
@@ -1055,6 +1086,122 @@ body.dark_theme .footer_block_text_politic a {
     line-height: 24px;
     margin-top: 30px;
   }
+}
+
+.back_modal {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: -4;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.back_modal.active {
+  opacity: 1;
+  z-index: 4;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.dropdown_modal {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 203px;
+  height: 500px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.7);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 5;
+  padding: 83px 15px 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.dropdown_modal_close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+}
+.dropdown_modal ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.dropdown_modal ul li {
+  margin-top: 20px;
+}
+.dropdown_modal ul li:first-child {
+  margin-top: 0px;
+}
+.dropdown_modal ul li a {
+  font-family: "Road Radio";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--secondary-color);
+}
+.dropdown_modal_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.dropdown_modal_links a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: var(--secondary-color);
+  display: inline-block;
+  margin-top: 10px;
+}
+.dropdown_modal.active {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .footer {

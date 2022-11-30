@@ -16,9 +16,22 @@ $(document).ready(function () {
         }
     });
     
-    $(".nav_mobile_top_btn").click(function() {
-        $(this).toggleClass("active");
-        $(".nav_mobile_drop").toggleClass("active");
+    $(".header_block_right_drop").click(function() {
+      $(".back_modal").addClass("active");
+      $(".dropdown_modal").addClass("active");
+      $("body").addClass("scroll");
+    });
+
+    $(".dropdown_modal_close").click(function() {
+      $(".back_modal").removeClass("active");
+      $(".dropdown_modal").removeClass("active");
+      $("body").removeClass("scroll");
+    });
+
+    $(".back_modal").click(function() {
+      $(".back_modal").removeClass("active");
+      $(".dropdown_modal").removeClass("active");
+      $("body").removeClass("scroll");
     });
 
     $('.main_block_slider').slick({
@@ -26,8 +39,9 @@ $(document).ready(function () {
         infinite: true,
         arrows: true,
         dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         speed: 500,
-        fade: true,
         cssEase: 'linear',
         prevArrow: $('.main_block_prev'),
         nextArrow: $('.main_block_next')
@@ -39,7 +53,8 @@ $(document).ready(function () {
         arrows: true,
         dots: true,
         speed: 500,
-        fade: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         cssEase: 'linear',
         prevArrow: $('.projects_wrap_prev'),
         nextArrow: $('.projects_wrap_next')
